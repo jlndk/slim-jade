@@ -6,7 +6,7 @@ use \Jade\Jade as Engine;
 
 class Jade extends \Slim\View{
 	protected $parserInstance; //Instance of the Jadeparser
-   
+    protected $parserOptions = array();
     /**
      * Render Jade Template
      *
@@ -20,6 +20,7 @@ class Jade extends \Slim\View{
     {
         $env = $this->getInstance();
         $templatePathname = $this->getTemplatePathname($template);
+        
         if (!is_file($templatePathname)) {
             throw new \RuntimeException("View cannot render `$template` because the template does not exist");
         }
@@ -27,7 +28,7 @@ class Jade extends \Slim\View{
         $data = array_merge($this->data->all(), (array) $data);
         extract($data);
 
-        return $env->render($this->getTemplatesDirectory() . $template, $data);
+        return $env->render($templatePathname, $data);
     }
     
     /**
@@ -35,7 +36,7 @@ class Jade extends \Slim\View{
      *
      * @return \Engine
      */
-    public function getInstance()
+    private function getInstance()
     {
         if (!$this->parserInstance) {
 

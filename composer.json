@@ -18,6 +18,9 @@
 		"slim/slim": "~2.0",
 		"slim/views": "0.1.*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
     "autoload": {
         "psr-4": {
             "Jlndk\\SlimJade\\": "src"
