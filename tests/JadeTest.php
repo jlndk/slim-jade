@@ -1,4 +1,11 @@
 <?php
+/**
+ * Slim Framework (http://slimframework.com)
+ *
+ * @link      https://github.com/codeguy/Slim
+ * @copyright Copyright (c) 2011-2015 Josh Lockhart
+ * @license   https://github.com/codeguy/Slim/blob/master/LICENSE (MIT License)
+ */
 namespace Jlndk\SlimJade\Tests;
 
 use Jlndk\SlimJade\Jade;

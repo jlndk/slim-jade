@@ -1,5 +1,4 @@
 #Jade for Slim framework
-[![Build Status](https://travis-ci.org/jlndk/slim-jade.svg?branch=master)](https://travis-ci.org/jlndk/slim-jade)
 **THIS IS IN EARLY ALPHA. DO NOT USE IN PRODUCTION YET!!!!!!**
 
 This is a helper for the Slim framework, that allows the use of jade-php, together with Slim
