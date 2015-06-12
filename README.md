@@ -39,3 +39,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jlndk/slim-jade/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
