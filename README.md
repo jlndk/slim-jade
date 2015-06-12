@@ -1,5 +1,5 @@
 #Jade for Slim framework
-**THIS IS IN EARLY ALPHA. NO NOT USE IN PRODUCTION YET!!!!!!**
+**THIS IS IN EARLY ALPHA. DO NOT USE IN PRODUCTION YET!!!!!!**
 
 This is a helper for the Slim framework, that allows the use of jade-php, together with Slim
 
@@ -12,6 +12,17 @@ $ composer require jlndk/slim-jade
 ```
 
 Requires Slim Framework 3 and PHP 5.4.0 or newer.
+
+### How to use
+    
+```php
+<?php
+require 'vendor/autoload.php';
+
+$app = new \Slim\Slim(array(
+    'view' => new \Jlndk\SlimJade\Jade()
+));
+```
 
 ## Contributing
 
