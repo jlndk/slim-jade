@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jlndk/slim-jade.svg?branch=master)](https://travis-ci.org/jlndk/slim-jade)
 #Jade for Slim framework
 **THIS IS IN EARLY ALPHA. DO NOT USE IN PRODUCTION YET!!!!!!**
 
