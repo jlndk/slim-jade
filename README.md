@@ -6,7 +6,7 @@ This is a helper for the Slim framework, that allows the use of jade-php, togeth
 Via [Composer](https://getcomposer.org/)
 
 ```bash
-$ composer require slim/twig-view
+$ composer require jlndk/slim-jade
 ```
 
 Requires Slim Framework 3 and PHP 5.4.0 or newer.
