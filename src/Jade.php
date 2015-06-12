@@ -36,7 +36,7 @@ class Jade extends \Slim\View{
      *
      * @return \Engine
      */
-    private function getInstance()
+    public function getInstance()
     {
         if (!$this->parserInstance) {
 
