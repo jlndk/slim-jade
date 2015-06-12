@@ -9,6 +9,7 @@
 namespace Jlndk\SlimJade\Tests;
 
 use Jlndk\SlimJade\Jade;
+use \Jade\Jade as Engine;
 use \Slim\Slim;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
@@ -36,5 +37,9 @@ class JadeTest extends \PHPUnit_Framework_TestCase
         ]);
 
         $this->assertEquals(trim("<p>Hi, my name is Jeff.</p>\n"), trim($output));
+    }
+    
+    public function testEngineInstance(){
+        $this->assertInstanceOf('\\Jade\\Jade', $this->app->view->getInstance());
     }
 }
