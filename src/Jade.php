@@ -39,11 +39,7 @@ class Jade extends \Slim\View{
     {
         if (!$this->parserInstance) {
 
-            $this->parserInstance = new Engine(array(
-                'prettyprint' => true,
-                'extension' => '.jade',
-                //'cache' => 'pathto/writable/cachefolder/'
-            ));
+            $this->parserInstance = new Engine($this->parserOptions);
         }
 
         return $this->parserInstance;

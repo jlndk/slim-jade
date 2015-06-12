@@ -14,7 +14,10 @@ $ composer require jlndk/slim-jade
 Requires Slim Framework 3 and PHP 5.4.0 or newer.
 
 ### How to use
-    
+
+##### [The Jade Syntax Reference](https://github.com/visionmedia/jade#readme)
+##### [Jade-php](https://github.com/kylekatarnls/jade-php#whats-new-)
+
 ```php
 <?php
 require 'vendor/autoload.php';
