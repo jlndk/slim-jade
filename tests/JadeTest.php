@@ -25,14 +25,14 @@ class JadeTest extends \PHPUnit_Framework_TestCase
     }
 
     public function testFetch()
-    {   
+    {
         $output = $this->app->view->fetch('example.jade', [
             'name' => 'Jeff'
         ]);
 
         $this->assertEquals(trim("<p>Hi, my name is Jeff.</p>\n"), trim($output));
     }
-    
+
     public function testEngineInstance(){
         $this->assertInstanceOf('\\Jade\\Jade', $this->app->view->getInstance());
     }

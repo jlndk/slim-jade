@@ -4,9 +4,11 @@ namespace Jlndk\SlimJade;
 
 use \Jade\Jade as Engine;
 
-class Jade extends \Slim\View{
-	protected $parserInstance; //Instance of the Jadeparser
+class Jade extends \Slim\View
+{
+    protected $parserInstance; //Instance of the Jadeparser
     protected $parserOptions = array();
+
     /**
      * Render Jade Template
      *
@@ -20,7 +22,7 @@ class Jade extends \Slim\View{
     {
         $env = $this->getInstance();
         $templatePathname = $this->getTemplatePathname($template);
-        
+
         if (!is_file($templatePathname)) {
             throw new \RuntimeException("View cannot render `$template` because the template does not exist");
         }
@@ -30,7 +32,7 @@ class Jade extends \Slim\View{
 
         return $env->render($templatePathname, $data);
     }
-    
+
     /**
      * Creates new Engine if it doesn't already exist, and returns it.
      *
@@ -46,6 +48,3 @@ class Jade extends \Slim\View{
         return $this->parserInstance;
     }
 }
-
-
-?>
